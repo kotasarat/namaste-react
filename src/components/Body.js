@@ -64,7 +64,10 @@ const Body = () => {
           </button>
           <button
             className="px-4 py-1 bg-gray-200 rounded-lg"
-            onClick={() => setFilteredResList(resList)}
+            onClick={() => {
+              setFilteredResList(resList);
+              setSearchText("");
+            }}
           >
             Clear
           </button>
@@ -79,7 +82,6 @@ const Body = () => {
               );
               console.log(filterResData);
               setFilteredResList(filterResData);
-              setSearchText("");
             }}
           >
             Top Rated Restaurants
