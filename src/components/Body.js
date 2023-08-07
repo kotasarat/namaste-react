@@ -79,6 +79,7 @@ const Body = () => {
               );
               console.log(filterResData);
               setFilteredResList(filterResData);
+              setSearchText("");
             }}
           >
             Top Rated Restaurants
